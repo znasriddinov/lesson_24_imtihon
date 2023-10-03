@@ -1,0 +1,136 @@
+footer {
+  .footer__back {
+    background-color: #1d2530;
+    color: #fff;
+
+    & .footer {
+      display: flex;
+      justify-content: center;
+      align-items: start;
+      gap: 389px;
+      padding-top: 111px;
+      margin-top: 90px;
+      padding-bottom: 78px;
+
+      &__left {
+        text-align: center;
+
+        & a {
+          & h3 {
+            font-family: "Gilroy-Bold";
+            margin-top: 10px;
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 24px;
+            color: #fff;
+          }
+        }
+      }
+
+      &__right {
+        display: grid;
+        grid-template-columns: 160px 191px;
+        gap: 126px;
+
+        & h3 {
+          font-family: "Gilroy-Medium";
+          color: #f4f5f7;
+          font-size: 20px;
+          font-weight: 500;
+          line-height: 30px;
+          letter-spacing: 0em;
+          text-align: left;
+        }
+
+        & .li-1 {
+          margin-top: 32px;
+        }
+
+        & li {
+          margin-top: 12px;
+
+          & a {
+            font-family: "Gilroy-Regular";
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 26px;
+            color: #eeeff4;
+          }
+        }
+
+        & .li-2 {
+          width: 216px;
+        }
+      }
+    }
+  }
+
+  & .footer__bottom {
+    background-color: #141b23;
+    padding: 24px 0;
+
+    & p {
+      font-family: "Gilroy-Regular";
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 24px;
+      color: #d9dbe1;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  footer {
+    .footer__back {
+      & .footer {
+        gap: 152px;
+        padding-top: 60px;
+        margin-top: 54px;
+        padding-bottom: 51px;
+
+        &__right {
+          grid-template-columns: 160px 191px;
+          gap: 20px;
+        }
+      }
+    }
+
+    & .footer__bottom {
+      padding: 25px 0;
+    }
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  footer {
+    .footer__back {
+      & .footer {
+        gap: 33px;
+        padding-top: 60px;
+        margin-top: 54px;
+        padding-bottom: 0;
+
+        &__right {
+          display: grid;
+          grid-template-columns: 160px;
+
+          & .li-1 {
+            margin-top: 16px;
+          }
+
+          & li {
+            margin-top: 8px;
+          }
+
+          & .li-2 {
+            width: 216px;
+          }
+        }
+      }
+    }
+
+    & .footer__bottom {
+      padding: 25px 0;
+    }
+  }
+}
